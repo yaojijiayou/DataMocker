@@ -43,4 +43,10 @@ teacher#name:s|gender:i:[0,1]|age:i:[20-30]
 ]
 ````
 
+# How to config
+-String
+    *name:s:[aa,bb,cc] //enum
+    *name:s:10         //get a random string whose length is 10
+    *name:s            ///get a random string whose length is 10 by default
+
 
