@@ -43,6 +43,11 @@ teacher#name:s|gender:i:[0,1]|age:i:[20-30]
 ]
 ````
 
+#One Demo based on the parser
+![Alt demo](https://github.com/yaojijiayou/DataMocker/blob/master/demo.gif)
+
+
+
 # How to config
 - String
 ````
