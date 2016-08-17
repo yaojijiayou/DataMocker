@@ -86,7 +86,8 @@ u can use 'o','object' as the second param
 ````
 
 # Others
+- Although the output json is not that large,  I promise that the sample data has covered all the possibilities implies in your config strings
 - Pls ignore other files, just pay attention to the Parser.js.
-- Only the function 'parse' has been exposed.
+
 
 
