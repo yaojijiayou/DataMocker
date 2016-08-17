@@ -97,7 +97,7 @@ function Parser() {
             result.data = [randomStr()];
             return result;
         }
-
+        
         var thirdParam = fieldStrArr[2];
         if (thirdParam.startsWith("[")) {
             thirdParam = thirdParam.substring(1, thirdParam.length - 1);
@@ -182,8 +182,7 @@ function Parser() {
     function parseBool(fieldStr) {
         /*
         boolean
-        name:b             //随机生成一个布尔值
-        name:b:all         //true和false
+        name:b             //true和false
         name:b:0           //false
         name:b:1           //true
         */
@@ -225,22 +224,12 @@ function Parser() {
         result.name = fieldStrArr[0];
         result.type = "object";
         result.data = fieldStrArr[2];
-
         return result;
-    }
-
-    function getLongestChildArrLength(obj) {
-        var longestLength = 0;
-        for (var i in obj) {
-            longestLength = (longestLength > obj[i].length) ? longestLength : obj[i].length;
-        }
-        return longestLength;
     }
 
     function getElementFromArray(arr, index) {
         if (!arr || !arr.length || index == undefined || index < 0) return "";
-        var length = arr.length;
-        return (index < length) ? arr[index] : arr[random(0, length - 1)];
+        return (index < arr.length) ? arr[index] : arr[random(0, arr.length - 1)];
     }
 
     function random(min, max) {
