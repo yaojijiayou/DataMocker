@@ -52,4 +52,34 @@ name:s            ///get a random string whose length is 10 by default
 u can use 's' or 'string' to stand for 'string'
 ````
 
+-int/long
+````
+name:i:[1-100]    //get a random in [1,100](both inclusive)
+name:i:[1,2,3]	  //enum
+name:i            //get a random int in [0,10] by default
+u can use 'i','int','integer','l','long' as the second param
+````
+-double/float
+````
+name:d             //get a random float num which is fix to 2 by default
+name:d:[1.1,2,3.2] //enum
+name:d:[1-10]      //get a flaot num in [1,100](both inclusive)
+u can use 'd','double','f','float' as the second param
+````
+-boolean
+````
+name:b             //true and false
+name:b:r           //a random bool
+name:b:0           //false
+name:b:1           //true
+````
+-object
+````
+name:o:child       //child is a another object
+````
+
+# Others
+-Pls ignore other files, just pay attention to the Parser.js.
+-Only the function 'parse' has been exposed.
+
 
