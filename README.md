@@ -1,6 +1,9 @@
 # Introduction
 Using the Parser.parse(str)  function, u can create some sample data by parsing inputed config strings.
 
+# A tool based on DataMocker
+![Alt demo](https://github.com/yaojijiayou/DataMocker/blob/master/demo.gif)
+
 # Example
 - Input config strings
 ````
